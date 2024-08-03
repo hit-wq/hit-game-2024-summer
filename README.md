@@ -12,3 +12,12 @@
 文档: [docs](/Docs/docs.md)
 
 约定: 如果需要在 markdown 中嵌入图片, 请将图片放到 media 文件夹中.
+
+可以安装 editorconfig 插件, 可以统一 `Format Document` 的格式.
+
+## TODO
+
+- More levels (such as start menu, game over, etc.)
+- Levels with different difficulties (challenges)
+- Sound / music support
+- Better organized and commented scripts

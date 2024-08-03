@@ -3,17 +3,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class engGameMenuController : MonoBehaviour
-{  
+{
     void OnEnable()
     {
 
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
-        
+
         Button replayButton = root.Q<Button>("replayButton");
-        replayButton.clicked += () => this.OnReplayClicked();    
+        replayButton.clicked += () => this.OnReplayClicked();
 
         Button backButton = root.Q<Button>("backButton");
-        backButton.clicked += () => this.OnBackClicked();   
+        backButton.clicked += () => this.OnBackClicked();
     }
 
     // When the back button is pressed, load the start menu scene.

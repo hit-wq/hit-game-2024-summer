@@ -27,11 +27,8 @@ This is a group project to be completed by two students.
 > （你需要对现有的游戏进行改进。以下只是一些建议，你完全可以自由发挥）
 
 - More levels (such as start menu, game over, etc.)
-
 - Levels with different difficulties (challenges)
-
 - Sound / music support
-
 - Better organized and commented scripts
 
 # Submission: （游戏提交）
@@ -43,6 +40,7 @@ thus you will get 0 (zero) marks! Your submission must include the
 following elements: （提交截止日期是8月15号晚11：50。
 迟交将导致你得零分！你的提交必须包括一下内容。请把它们打包成一个.zip文件，并以同组两/三个人的姓名来命名该
 Zip 文件）
+
 - Your game project. The project must include the following folders
     only: Assets, Project Settings and Build（三个文件夹） - do not
     add other folders。 Please note that it's your responsibility to
