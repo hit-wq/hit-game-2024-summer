@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="height: 188px; position: relative; top: 15%; left: 1%; width: 527px; background-image: resource(&apos;MenuLogo&apos;); align-self: center; align-items: auto;" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; width: auto; height: auto; background-color: rgba(120, 224, 37, 0);">
+        <ui:Button text="Start Game" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" name="startgamebutton" style="height: 64px; width: 219px; position: relative; top: 40%; left: 40%; -unity-font-style: bold; font-size: 24px; align-self: auto;" />
+    </ui:VisualElement>
+</ui:UXML>
