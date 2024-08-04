@@ -1,0 +1,40 @@
+{
+  "level": {
+    "levelId": "001",
+    "levelName": "testlevel",
+    "difficulty": "easy",
+    "initialHealth": 6
+  },
+  "goal": [
+    {
+      "type": "flag"
+    }
+  ],
+  "sections":[
+    {
+      "ground": true,
+      "objects": [
+        {
+          "type": "barriel",
+          "x": 30,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 50,
+          "y": -3
+        }
+      ]
+    },
+    {
+      "ground": true,
+      "objects": [
+        {
+          "type": "flag",
+          "x": 10,
+          "y": -1.85
+        }
+      ]
+    }
+  ]
+}
