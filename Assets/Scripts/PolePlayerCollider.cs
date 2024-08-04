@@ -3,7 +3,7 @@
 /*
  * Provide the obstacles with a way of damaging the player.
  */
-public class PlayerCollider : MonoBehaviour
+public class PolePlayerCollider : MonoBehaviour
 {
     /*
      * A trigger callback to detect when the player's collider has
@@ -17,7 +17,7 @@ public class PlayerCollider : MonoBehaviour
           other.gameObject.GetComponent<PlayerController>();
 
         // Register damage with player
-        playerController.Damage();
+        playerController.Success();
 
         // Make this object disappear
         GameObject.Destroy(gameObject);

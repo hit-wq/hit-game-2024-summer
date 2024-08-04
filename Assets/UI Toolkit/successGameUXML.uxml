@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Label tabindex="-1" text="Congratulations!&#10;Level cleared with ? hearts!" parse-escape-sequences="true" display-tooltip-when-elided="true" focusable="false" enable-rich-text="true" name="Title" style="height: 217px; width: 498px; align-items: stretch; justify-content: flex-start; top: auto; align-self: center; -unity-text-align: lower-center; -unity-font-style: bold; font-size: 30px; text-overflow: clip;" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; width: auto; height: auto; background-color: rgba(120, 224, 37, 0);">
+        <ui:Button text="Replay" parse-escape-sequences="false" display-tooltip-when-elided="true" enable-rich-text="false" name="replayButton" style="height: 45px; width: 140px; position: relative; top: 30%; left: 35%; -unity-font-style: bold; font-size: 20px; align-self: auto;" />
+        <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" name="backButton" style="height: 45px; width: 140px; position: absolute; top: 30%; left: 55%; -unity-font-style: bold; font-size: 20px; align-self: auto; white-space: normal;" />
+    </ui:VisualElement>
+</ui:UXML>

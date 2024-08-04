@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
  * Behaviour to handle keyboard input and also store the player's
  * current health.
  */
+
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rigidbody2d;
-    private int health;
     private bool canJump;
 
     /*
@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
      */
     private void Start()
     {
-        health = 6;
+        gameData.health = 6;
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
@@ -27,12 +27,20 @@ public class PlayerController : MonoBehaviour
      */
     public void Damage()
     {
-        health -= 1;
+        gameData.health -= 1;
 
-        if (health < 1)
+        if (gameData.health < 1)
         {
             SceneManager.LoadScene("EndGameUI");
         }
+    }
+
+    /*
+     * Level success, change scene to success game scene
+     */
+    public void Success()
+    {
+        SceneManager.LoadScene("SuccessGameUI");
     }
 
     /*
@@ -40,7 +48,7 @@ public class PlayerController : MonoBehaviour
      */
     public int GetHealth()
     {
-        return health;
+        return gameData.health;
     }
 
     /*
