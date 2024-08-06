@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/successGameUI.unity
     guid: a3b3d1819b9196544bf25af949da0a49
+  - enabled: 1
+    path: Assets/Scenes/levelSelectionUI.unity
+    guid: 5f243dd9b3b89614a9a998a51e97a68b
   m_configObjects: {}
