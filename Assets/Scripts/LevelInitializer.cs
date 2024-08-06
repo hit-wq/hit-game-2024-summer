@@ -1,3 +1,4 @@
+using Level;
 using System;
 using System.Collections.Generic;
 using Unity.Mathematics;
@@ -15,6 +16,10 @@ public class LevelInitializer : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log($"Filepath: {GameData.levelJsonPath}");
+        if (GameData.levelJsonPath != null) {
+            levelJsonData = Resources.Load<TextAsset>(GameData.levelJsonPath);
+        }
         LevelData levelData = ParseLevel(levelJsonData);
 
         if (strlist.Count != objectlist.Count)
@@ -26,6 +31,8 @@ public class LevelInitializer : MonoBehaviour
         {
             objectdict.Add(strlist[i], objectlist[i]);
         }
+
+        GameData.health = levelData.level.initialHealth;
 
         int count = 0;
         foreach (Section section in levelData.sections)
@@ -56,7 +63,7 @@ public class LevelInitializer : MonoBehaviour
 
     }
 
-    public LevelData ParseLevel(TextAsset jsonData)
+    public Level.LevelData ParseLevel(TextAsset jsonData)
     {
         LevelData levelData = JsonUtility.FromJson<LevelData>(jsonData.text);
         return levelData;

@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
      */
     private void Start()
     {
-        gameData.health = 6;
+        GameData.health = 6;
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
@@ -27,9 +27,9 @@ public class PlayerController : MonoBehaviour
      */
     public void Damage()
     {
-        gameData.health -= 1;
+        GameData.health -= 1;
 
-        if (gameData.health < 1)
+        if (GameData.health < 1)
         {
             SceneManager.LoadScene("EndGameUI");
         }
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
      */
     public int GetHealth()
     {
-        return gameData.health;
+        return GameData.health;
     }
 
     /*

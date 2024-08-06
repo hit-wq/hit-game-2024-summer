@@ -16,6 +16,6 @@ public class startGameMenuController : MonoBehaviour
     // When the start button is pressed, load the Game scene.
     public void OnStartClicked()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("levelSelectionUI");
     }
 }
