@@ -5,12 +5,14 @@
       "levels": [
         {
           "label": "1-1",
+          "levelId": "001",
           "jsonfilename": "level1",
           "description": "Some description",
           "difficulties": ["easy", "hard"]
         },
         {
           "label": "1-2",
+          "levelId": "002",
           "jsonfilename": "level2",
           "description": "Some description",
           "difficulties": ["easy", "hard"]

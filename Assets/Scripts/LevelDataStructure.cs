@@ -15,6 +15,7 @@ namespace Level
         public string levelId;
         public string levelName;
         public string difficulty;
+        public string description;
         public int initialHealth;
     }
 

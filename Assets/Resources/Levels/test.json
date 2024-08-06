@@ -3,6 +3,7 @@
     "levelId": "001",
     "levelName": "testlevel",
     "difficulty": "easy",
+    "description": "",
     "initialHealth": 6
   },
   "goal": [

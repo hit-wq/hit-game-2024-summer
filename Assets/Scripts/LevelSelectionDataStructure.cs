@@ -19,6 +19,7 @@ namespace LevelSelection
     public class LevelData
     {
         public string label;
+        public string levelId;
         public string jsonfilename;
         public string description;
         public string[] difficulties;
