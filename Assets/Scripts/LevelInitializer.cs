@@ -20,7 +20,7 @@ public class LevelInitializer : MonoBehaviour
         if (GameData.levelJsonPath != null) {
             levelJsonData = Resources.Load<TextAsset>(GameData.levelJsonPath);
         }
-        LevelData levelData = ParseLevel(levelJsonData);
+        LevelData levelData = LevelData.Parse(levelJsonData);
 
         if (strlist.Count != objectlist.Count)
         {
@@ -63,9 +63,5 @@ public class LevelInitializer : MonoBehaviour
 
     }
 
-    public Level.LevelData ParseLevel(TextAsset jsonData)
-    {
-        LevelData levelData = JsonUtility.FromJson<LevelData>(jsonData.text);
-        return levelData;
-    }
+
 }

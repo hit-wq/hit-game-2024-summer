@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Level
 {
 
@@ -7,6 +9,12 @@ namespace Level
         public LevelInfo level;
         public Goal[] goal;
         public Section[] sections;
+
+        public static LevelData Parse(TextAsset jsonData)
+        {
+            LevelData levelData = JsonUtility.FromJson<LevelData>(jsonData.text);
+            return levelData;
+        }
     }
 
     [System.Serializable]
