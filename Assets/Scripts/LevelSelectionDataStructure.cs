@@ -6,6 +6,12 @@ namespace LevelSelection
     public class LevelSelectionData
     {
         public RowData[] rows;
+
+        public static LevelSelectionData Parse(TextAsset jsonData)
+        {
+            LevelSelectionData levelSelectionData = JsonUtility.FromJson<LevelSelectionData>(jsonData.text);
+            return levelSelectionData;
+        }
     }
 
     [System.Serializable]

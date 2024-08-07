@@ -10,6 +10,8 @@ public class levelSelectionGridController : MonoBehaviour
 
     public VisualTreeAsset levelRowTemplate;
 
+    public VisualTreeAsset popupTemplate;
+
     public TextAsset levelSelectionJson;
 
     private LevelSelectionData levelSelectionData;
@@ -18,7 +20,7 @@ public class levelSelectionGridController : MonoBehaviour
 
     void Awake()
     {
-        levelSelectionData = ParseLevelSelection(levelSelectionJson);
+        levelSelectionData = LevelSelectionData.Parse(levelSelectionJson);
     }
 
     void OnEnable()
@@ -37,12 +39,6 @@ public class levelSelectionGridController : MonoBehaviour
             AddRow(scrollViewContent, row);
         }
         
-    }
-
-    public LevelSelection.LevelSelectionData ParseLevelSelection(TextAsset jsonData)
-    {
-        LevelSelectionData levelSelectionData = JsonUtility.FromJson<LevelSelectionData>(jsonData.text);
-        return levelSelectionData;
     }
 
     void AddRow(ScrollView scrollView, RowData row)
