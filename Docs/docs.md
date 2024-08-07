@@ -31,11 +31,9 @@
 
 2024.08.07
 修改gamedata类
-public class gameData
-{
-    public static int health { get; set; }
+
    public static int shield { get; set; }
-}
+
 添加了新的成员变量shied护盾值，初始为0(在playercontroller里设置)
 目前为了测试，护盾初始值为5，当关卡为高Level时建议初始护盾为0
 
@@ -43,3 +41,7 @@ public class gameData
 回血超过上限的判断逻辑我放在 playerController.Heal()这个函数里了，后续如果要调整血量上限此处需要修改
 护盾血量同时存在时先消耗护盾的判断逻辑也在playerController里
 添加了碰触护盾道具增加护盾值的函数AddShield
+
+接下来我试着加点场景里的背景图片，以及会动的贴图(比如云彩飞鸟之类的)
+不知是Bug还是特性的东西：json不同的section里的坐标似乎不是绝对坐标，而是相对坐标
+第一个section里的护盾坐标和第三个section中的护盾坐标都一样，但是实际游戏中的绝对坐标不一样
