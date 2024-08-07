@@ -6,17 +6,14 @@ using UnityEngine.UIElements;
 
 public class levelSelectionGridController : MonoBehaviour
 {
-    public VisualTreeAsset buttonTemplate; // The UXML template for the button
-
+    public VisualTreeAsset levelButtonTemplate; // The UXML template for the button
     public VisualTreeAsset levelRowTemplate;
-
+    public VisualTreeAsset popupButtonTemplate;
     public VisualTreeAsset popupTemplate;
-
     public TextAsset levelSelectionJson;
-
     private LevelSelectionData levelSelectionData;
-
     private ScrollView scrollViewContent; // The content panel of the scroll view
+    private VisualElement root;
 
     void Awake()
     {
@@ -25,7 +22,7 @@ public class levelSelectionGridController : MonoBehaviour
 
     void OnEnable()
     {
-        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+        root = GetComponent<UIDocument>().rootVisualElement;
         scrollViewContent = root.Q<ScrollView>("BaseLevelContainer");
         // Assuming the ScrollView and its content are already set up in the UXML file
         // and assigned to the scrollViewContent variable in the inspector.
@@ -38,7 +35,7 @@ public class levelSelectionGridController : MonoBehaviour
         {
             AddRow(scrollViewContent, row);
         }
-        
+
     }
 
     void AddRow(ScrollView scrollView, RowData row)
@@ -50,34 +47,71 @@ public class levelSelectionGridController : MonoBehaviour
 
         foreach (var level in row.levels)
         {
-            AddButton(rowContainer, level);
+            AddLevelButton(rowContainer, level);
         }
 
         scrollView.Add(rowContainer);
     }
 
-    void AddButton(VisualElement parent, LevelData level)
+    void AddLevelButton(VisualElement parent, LevelSelection.LevelData level)
     {
         // Instantiate the button from the UXML template
-        VisualElement buttonFromTemplate = buttonTemplate.Instantiate();
-        Button button = buttonFromTemplate.Q<Button>("button"); // Assuming the Button has a class name "dynamic-button"
+        VisualElement buttonFromTemplate = levelButtonTemplate.Instantiate();
+        Button button = buttonFromTemplate.Q<Button>("button");
 
         // Set the button text to the index
         button.text = level.label;
 
         // Add listener for the button click
-        button.RegisterCallback<ClickEvent>(ev => ButtonClicked(level));
+        button.RegisterCallback<ClickEvent>(ev => LevelButtonClicked(level));
 
         // Add the button to the ScrollView content
         parent.Add(button);
     }
 
-    void ButtonClicked(LevelData level)
+    void LevelButtonClicked(LevelData level)
     {
+        PopupInstantiate(level);
+    }
+
+    void PopupInstantiate(LevelData level) {
         // TODO: Create a popup where user can select difficulty.
-        string jsonName = level.jsonfilename + "_" + "easy";
+        VisualElement popupFromTemplate = popupTemplate.Instantiate().Q<VisualElement>("Popup");
+        popupFromTemplate.Q<Label>("LevelName").text = level.label;
+        popupFromTemplate.Q<Label>("LevelDescription").text = level.description;
+        popupFromTemplate.Q<Button>("Exit").RegisterCallback<ClickEvent>(ev => {
+            root.Remove(popupFromTemplate);
+        });
+
+        VisualElement buttonRow = popupFromTemplate.Q<VisualElement>("ButtonRow");
+        foreach (string difficulty in level.difficulties)
+        {
+            string jsonName = level.jsonfilename + "_" + difficulty;
+            AddPopupButton(buttonRow, difficulty, jsonName);
+        }
+        root.Add(popupFromTemplate);
+    }
+
+    void AddPopupButton(VisualElement parent, string difficulty, string jsonName)
+    {
+        // Instantiate the button from the UXML template
+        VisualElement buttonFromTemplate = levelButtonTemplate.Instantiate();
+        Button button = buttonFromTemplate.Q<Button>("button");
+
+        // Set the button text to the index
+        button.text = difficulty;
+
+        // Add listener for the button click
+        button.RegisterCallback<ClickEvent>(ev => PopupButtonClicked(jsonName));
+
+        // Add the button to the ScrollView content
+        parent.Add(button);
+    }
+
+    void PopupButtonClicked(string jsonName)
+    {
         GameData.levelJsonPath = "Levels/" + jsonName;
-        Debug.Log($"Button {level.label} clicked, should jump to {jsonName}, filepath: {GameData.levelJsonPath}");
+        Debug.Log($"Jump to filepath: {GameData.levelJsonPath}");
         SceneManager.LoadScene("Game");
     }
 }

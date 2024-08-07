@@ -152,9 +152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832d4f999e7c2bd498caaa601b501b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonTemplate: {fileID: 9197481963319205126, guid: d3b9eb7e84ff1114da9b11c41d8eb288,
+  levelButtonTemplate: {fileID: 9197481963319205126, guid: d3b9eb7e84ff1114da9b11c41d8eb288,
     type: 3}
   levelRowTemplate: {fileID: 9197481963319205126, guid: 2bd47cb02f5d1924a9c3aedb159fe868,
+    type: 3}
+  popupButtonTemplate: {fileID: 9197481963319205126, guid: d3b9eb7e84ff1114da9b11c41d8eb288,
+    type: 3}
+  popupTemplate: {fileID: 9197481963319205126, guid: 47e94c296aca50946b0e361f06748b68,
     type: 3}
   levelSelectionJson: {fileID: 4900000, guid: 5b84fe678d492d94f94014673216b2e5, type: 3}
 --- !u!114 &263495800
