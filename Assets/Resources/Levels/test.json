@@ -24,6 +24,46 @@
           "type": "barriel",
           "x": 50,
           "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 15,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 20,
+          "y": -3
+        }
+      ]
+    },
+    {
+      "ground": true,
+      "objects": [
+        {
+          "type": "heart",
+          "x": 5,
+          "y": -3
+        },
+        {
+          "type": "heart",
+          "x": 10,
+          "y": -3
+        }
+      ]
+    },
+    {
+      "ground": true,
+      "objects": [
+        {
+          "type": "shield",
+          "x": 15,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 20,
+          "y": -3
         }
       ]
     },

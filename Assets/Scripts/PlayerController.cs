@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         GameData.health = 6;
+    
+        GameData.shield = 5;
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
@@ -27,14 +29,30 @@ public class PlayerController : MonoBehaviour
      */
     public void Damage()
     {
-        GameData.health -= 1;
+        if (GameData.shield > 0)
+        { GameData.shield = GameData.shield - 1; }
+        else
+        { GameData.health -= 1; }
 
         if (GameData.health < 1)
         {
             SceneManager.LoadScene("EndGameUI");
         }
     }
+    public void Heal()
+    {
 
+        if (GameData.health == 6)
+        {
+            return;
+        }
+        GameData.health += 1;
+    }
+    public void AddShield()
+    {
+
+        GameData.shield += 1;
+    }
     /*
      * Level success, change scene to success game scene
      */
@@ -50,7 +68,10 @@ public class PlayerController : MonoBehaviour
     {
         return GameData.health;
     }
-
+    public int GetShield()
+    {
+        return GameData.shield;
+    }
     /*
      * Poll keyboard for when the up arrow is pressed. If the player can jump
      * (is on the ground) then add force to the cached Rigidbody2D component.

@@ -27,3 +27,19 @@
 其实我也没太想好, 是一个关卡的所有难度共用相同的地图, 还是每个难度都有单独一张地图.
 第一种方法比较节省, 但限制比较大, 就用了后面的方式.
 如果想要简单的地图道具多些, 难的地图少些, 大概用后面的方式会好一些.
+
+
+2024.08.07
+修改gamedata类
+public class gameData
+{
+    public static int health { get; set; }
+   public static int shield { get; set; }
+}
+添加了新的成员变量shied护盾值，初始为0(在playercontroller里设置)
+目前为了测试，护盾初始值为5，当关卡为高Level时建议初始护盾为0
+
+添加了 回血道具红心和护盾道具
+回血超过上限的判断逻辑我放在 playerController.Heal()这个函数里了，后续如果要调整血量上限此处需要修改
+护盾血量同时存在时先消耗护盾的判断逻辑也在playerController里
+添加了碰触护盾道具增加护盾值的函数AddShield
