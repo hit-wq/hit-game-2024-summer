@@ -1,6 +1,6 @@
 {
   "level": {
-    "levelId": "002",
+    "levelId": "003",
     "levelName": "testlevel",
     "difficulty": "hard",
     "description": "",
@@ -17,13 +17,28 @@
       "ground": true,
       "objects": [
         {
-          "type": "barriel",
+          "type": "bomb",
           "x": 15,
           "y": -3
         },
         {
+          "type": "shield",
+          "x": 24,
+          "y": -3
+        },
+        {
           "type": "bomb",
-          "x": 30,
+          "x": 32,
+          "y": -3
+        },
+        {
+          "type": "heart",
+          "x": 38,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 40,
           "y": -3
         },
         {
@@ -32,18 +47,18 @@
           "y": -3
         },
         {
-          "type": "shield",
-          "x": 60,
-          "y": -3
-        },
-        {
-          "type": "barriel",
-          "x": 75,
+          "type": "bomb",
+          "x": 57,
           "y": -3
         },
         {
           "type": "heart",
-          "x": 80,
+          "x": 70,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 78,
           "y": -3
         },
         {
@@ -53,32 +68,61 @@
         },
         {
           "type": "barriel",
-          "x": 105,
+          "x": 102,
           "y": -3
         },
         {
           "type": "heart",
-          "x": 114,
+          "x": 108,
           "y": -3
         },
         {
-          "type": "bomb",
-          "x": 120,
-          "y": -3
-        },
-        {
-          "type": "heart",
-          "x": 129,
+          "type": "shield",
+          "x": 118,
           "y": -3
         },
         {
           "type": "barriel",
-          "x": 135,
+          "x": 128,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 141,
           "y": -3
         },
         {
           "type": "barriel",
           "x": 150,
+          "y": -3
+        },
+        {
+          "type": "heart",
+          "x": 158,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 163,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 174,
+          "y": -3
+        },
+
+        {
+          "type": "heart",
+          "x": 180,
+          "y": -3
+        },
+
+
+
+        {
+          "type": "shield",
+          "x": 190,
           "y": -3
         }
       ]
@@ -88,7 +132,7 @@
       "objects": [
         {
           "type": "flag",
-          "x": 60,
+          "x": 100,
           "y": -1.85
         }
       ]

@@ -1,0 +1,159 @@
+{
+  "level": {
+    "levelId": "004",
+    "levelName": "testlevel",
+    "difficulty": "hard",
+    "description": "",
+    "initialHealth": 4,
+    "initialShield": 0
+  },
+  "goal": [
+    {
+      "type": "flag"
+    }
+  ],
+  "sections":[
+    {
+      "ground": true,
+      "objects": [
+       
+        {
+          "type": "shield",
+          "x": 14,
+          "y": -3
+        },
+       
+        {
+          "type": "bomb",
+          "x": 20,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 28,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 36,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 44,
+          "y": -3
+        },
+
+        {
+          "type": "angelheart",
+          "x": 50,
+          "y": -3
+        },
+
+        {
+          "type": "bomb",
+          "x": 55,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 67,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 79,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 91,
+          "y": -3
+        },
+        
+        {
+          "type": "angelheart",
+          "x": 99,
+          "y": -3
+        },
+
+
+
+        {
+          "type": "bomb",
+          "x": 105,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 117,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 130,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 142,
+          "y": -3
+        },
+
+        {
+          "type": "angelheart",
+          "x": 147,
+          "y": -3
+        },
+
+        {
+          "type": "barriel",
+          "x": 154,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 160,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 166,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 172,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 178,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 184,
+          "y": -3
+        },
+        {
+          "type": "angelheart",
+          "x": 190,
+          "y": -3
+        }
+
+
+      ]
+    },
+    {
+      "ground": true,
+      "objects": [
+        {
+          "type": "flag",
+          "x": 100,
+          "y": -1.85
+        }
+      ]
+    }
+  ]
+}

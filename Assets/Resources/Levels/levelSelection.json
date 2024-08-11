@@ -4,17 +4,31 @@
       "title": "test",
       "levels": [
         {
-          "label": "1-1",
+          "label": "LEVEL1",
           "levelId": "001",
           "jsonfilename": "level1",
-          "description": "Some description",
+          "description": "This is the first level, enjoy the game!",
           "difficulties": ["easy", "hard"]
         },
         {
-          "label": "1-2",
+          "label": "LEVEL2",
           "levelId": "002",
           "jsonfilename": "level2",
-          "description": "Some description",
+          "description": "Watch out for the bombs! There are bomb items in the second level, and you will lose 2 health points if you touch the bomb items!",
+          "difficulties": ["easy", "hard"]
+        },
+        {
+          "label": "LEVEL3",
+          "levelId": "003",
+          "jsonfilename": "level3",
+          "description": "More bombs are coming! Pay attention to them!",
+          "difficulties": ["easy", "hard"]
+        },
+        {
+          "label": "LEVEL4",
+          "levelId": "004",
+          "jsonfilename": "level4",
+          "description": "We've added angelheart to the field, and you'll restore all your health points when you touch it. Meanwhile, still be careful of the bombs!",
           "difficulties": ["easy", "hard"]
         }
       ]

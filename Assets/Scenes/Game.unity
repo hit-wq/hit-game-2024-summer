@@ -233,12 +233,14 @@ MonoBehaviour:
   - heart
   - shield
   - bomb
+  - angelheart
   objectlist:
   - {fileID: 163192, guid: a3363baa3870ddd46bf84af9c621aa9b, type: 3}
   - {fileID: 3957729055205792929, guid: 68b4bfbb226386447937f1d1a6d0342a, type: 3}
   - {fileID: 4809756472763200835, guid: 7853852f44e44f54d933e6d10841ec51, type: 3}
   - {fileID: 2763147188241707571, guid: 474eb0c06284a8f49addf962fbfe5eac, type: 3}
   - {fileID: 8939383051913021550, guid: 888182923a88a894a90317a9fe42099e, type: 3}
+  - {fileID: 5251160830081169533, guid: c5a414481cd9aa04691bb09889f13b94, type: 3}
 --- !u!4 &380971863
 Transform:
   m_ObjectHideFlags: 0

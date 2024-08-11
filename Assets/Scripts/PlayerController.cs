@@ -47,7 +47,12 @@ public class PlayerController : MonoBehaviour
         }
         GameData.health += 1;
     }
-    public void AddShield()
+
+    public void HealAll()
+    {
+        GameData.health = 6;
+    }
+        public void AddShield()
     {
 
         GameData.shield += 1;
