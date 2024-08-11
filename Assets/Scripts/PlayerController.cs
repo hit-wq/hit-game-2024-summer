@@ -17,9 +17,8 @@ public class PlayerController : MonoBehaviour
      */
     private void Start()
     {
-        GameData.health = 6;
-    
-        GameData.shield = 5;
+       //红心护盾初始设置的逻辑改到levelinitializer.cs里了
+
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 

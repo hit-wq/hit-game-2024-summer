@@ -25,6 +25,7 @@ namespace Level
         public string difficulty;
         public string description;
         public int initialHealth;
+            public int initialShield;
     }
 
     [System.Serializable]

@@ -2,10 +2,10 @@
   "level": {
     "levelId": "002",
     "levelName": "testlevel",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "description": "",
-    "initialHealth": 6,
-    "initialShield": 2
+    "initialHealth": 4,
+    "initialShield": 0
   },
   "goal": [
     {

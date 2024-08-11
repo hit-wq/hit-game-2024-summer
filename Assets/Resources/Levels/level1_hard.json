@@ -4,7 +4,8 @@
     "levelName": "testlevel",
     "difficulty": "hard",
     "description": "",
-    "initialHealth": 6
+    "initialHealth": 4,
+    "initialShield": 0
   },
   "goal": [
     {
@@ -17,12 +18,62 @@
       "objects": [
         {
           "type": "barriel",
+          "x": 15,
+          "y": -3
+        },
+        {
+          "type": "barriel",
           "x": 30,
           "y": -3
         },
         {
           "type": "barriel",
-          "x": 50,
+          "x": 45,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 60,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 75,
+          "y": -3
+        },
+        {
+          "type": "heart",
+          "x": 80,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 90,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 105,
+          "y": -3
+        },
+        {
+          "type": "heart",
+          "x": 114,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 120,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 135,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 150,
           "y": -3
         }
       ]
@@ -32,7 +83,7 @@
       "objects": [
         {
           "type": "flag",
-          "x": 10,
+          "x": 60,
           "y": -1.85
         }
       ]

@@ -33,6 +33,7 @@ public class LevelInitializer : MonoBehaviour
         }
 
         GameData.health = levelData.level.initialHealth;
+        GameData.shield = levelData.level.initialShield;
 
         int count = 0;
         foreach (Section section in levelData.sections)
