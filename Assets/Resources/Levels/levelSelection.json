@@ -1,7 +1,7 @@
 {
   "rows": [
     {
-      "title": "test",
+      "title": "levels!",
       "levels": [
         {
           "label": "LEVEL1",
@@ -29,6 +29,13 @@
           "levelId": "004",
           "jsonfilename": "level4",
           "description": "We've added angelheart to the field, and you'll restore all your health points when you touch it. Meanwhile, still be careful of the bombs!",
+          "difficulties": ["easy", "hard"]
+        },
+        {
+          "label": "LEVEL5",
+          "levelId": "005",
+          "jsonfilename": "level5",
+          "description": "This is the final trial! Go ahead, warrior!",
           "difficulties": ["easy", "hard"]
         }
       ]

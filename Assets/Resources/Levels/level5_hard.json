@@ -1,0 +1,273 @@
+{
+  "level": {
+    "levelId": "004",
+    "levelName": "testlevel",
+    "difficulty": "hard",
+    "description": "",
+    "initialHealth": 4,
+    "initialShield": 0
+  },
+  "goal": [
+    {
+      "type": "flag"
+    }
+  ],
+ "sections":[
+    {
+      "ground": true,
+      "objects": [
+       
+        {
+          "type": "shield",
+          "x": 14,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 17,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 20,
+          "y": -3
+        },
+
+
+
+        {
+          "type": "bomb",
+          "x": 30,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 42,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 54,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 66,
+          "y": -3
+        },
+        {
+          "type": "heart",
+          "x": 72,
+          "y": -3
+        },
+       
+
+
+
+        {
+          "type": "bomb",
+          "x": 82,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 95,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 108,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 121,
+          "y": -3
+        },
+        {
+          "type": "heart",
+          "x": 127,
+          "y": -3
+        },
+
+
+        {
+          "type": "barriel",
+          "x": 133,
+          "y": -3
+        },
+        {
+          "type": "heart",
+          "x": 139,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 146,
+          "y": -3
+        },
+
+        {
+          "type": "shield",
+          "x": 152,
+          "y": -3
+        },
+
+        {
+          "type": "barriel",
+          "x": 159,
+          "y": -3
+        },
+
+        {
+          "type": "bomb",
+          "x": 172,
+          "y": -3
+        },
+
+
+        {
+          "type": "angelheart",
+          "x": 178,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 183,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 186,
+          "y": -3
+        },
+
+
+
+        {
+          "type": "bomb",
+          "x": 191,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 204,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 217,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 230,
+          "y": -3
+        },
+        {
+          "type": "heart",
+          "x": 235,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 238,
+          "y": -3
+        },
+
+
+
+        {
+          "type": "bomb",
+          "x": 243,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 256,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 269,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 282,
+          "y": -3
+        },
+        {
+          "type": "angelheart",
+          "x": 288,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 293,
+          "y": -3
+        },
+        {
+          "type": "shield",
+          "x": 296,
+          "y": -3
+        },
+
+        {
+          "type": "barriel",
+          "x": 301,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 314,
+          "y": -3
+        },
+        {
+          "type": "barriel",
+          "x": 327,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 340,
+          "y": -3
+        },
+
+        {
+          "type": "barriel",
+          "x": 353,
+          "y": -3
+        },
+        {
+          "type": "bomb",
+          "x": 366,
+          "y": -3
+        },
+
+
+
+      
+        {
+          "type": "angelheart",
+          "x": 372,
+          "y": -3
+        }
+
+       
+
+
+      ]
+    },
+    {
+      "ground": true,
+      "objects": [
+        {
+          "type": "flag",
+          "x": 282,
+          "y": -1.85
+        }
+      ]
+    }
+  ]
+}

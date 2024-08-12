@@ -53,3 +53,10 @@
 3.增加了新道具angelheart，碰到angelheart时玩家回复所有生命值
 4.制作了关卡1-4，并添加了简略的描述
 (关卡4难度有待调整)
+08.12
+1.加了游戏bgm和碰撞音效，碰撞音效播放逻辑在各个prefeb内部。同时修改了物体遭到碰撞后的逻辑，使用
+GetComponent<Collider2D>().enabled = false;  
+GetComponent<SpriteRenderer>().enabled = false; 
+而不是destroy(),因为后者会导致音频无法播放。
+2.减小了Bomb的碰撞面积
+2.制作第5关（暂定为最后一关）

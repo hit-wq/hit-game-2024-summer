@@ -20,10 +20,21 @@ public class successGameMenuController : MonoBehaviour
     // Generate title text
     private string titleText()
     {
+        string result;
         string heartAmount = (GameData.health / 2).ToString() +
             (GameData.health % 2 == 1 ? ".5" : "");
-        string result = "Congratulations!\nLevel cleared with " +
+        string shieldAmount = (GameData.shield / 2).ToString() +
+           (GameData.shield % 2 == 1 ? ".5" : "");
+        if (GameData.shield == 0) { 
+         result = "Congratulations!\nLevel cleared with " +
             heartAmount + " hearts!";
+        }
+        else
+        {
+            result = "Congratulations!\nLevel cleared with " +
+            heartAmount + " hearts and " + shieldAmount + " shields!";
+
+        }
         return result;
     }
 
