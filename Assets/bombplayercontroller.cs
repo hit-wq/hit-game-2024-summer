@@ -11,15 +11,23 @@ public class bombplayercontroller : MonoBehaviour
      * reference can apply damage. Then remove the obstacle for feedback.
      */
     private void OnTriggerEnter2D(Collider2D other)
-    {    
+    {
+        AudioSource audioSource = GetComponent<AudioSource>();
         // Obtain a reference to the Player's PlayerController
         PlayerController playerController =
           other.gameObject.GetComponent<PlayerController>();
+        if (audioSource != null)
+        {
+            audioSource.Play();
 
+        }
         // Register damage with player
         playerController.Damage();
         playerController.Damage();
         // Make this object disappear
-        GameObject.Destroy(gameObject);
+        GetComponent<Collider2D>().enabled = false;
+
+
+        GetComponent<SpriteRenderer>().enabled = false;
     }
 }

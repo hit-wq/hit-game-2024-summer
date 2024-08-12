@@ -2,7 +2,7 @@
 
 /*
  * Provide the obstacles with a way of damaging the player.
- */
+ */ 
 public class BarrelPlayerCollider : MonoBehaviour
 {
     /*
@@ -10,16 +10,27 @@ public class BarrelPlayerCollider : MonoBehaviour
      * entered the obstacle's. Then simply obtain the PlayerController
      * reference can apply damage. Then remove the obstacle for feedback.
      */
+
     private void OnTriggerEnter2D(Collider2D other)
     {
+        AudioSource audioSource = GetComponent<AudioSource>();
         // Obtain a reference to the Player's PlayerController
         PlayerController playerController =
           other.gameObject.GetComponent<PlayerController>();
 
         // Register damage with player
-        playerController.Damage();
+        if (audioSource != null)
+        {
+            audioSource.Play();
+   
+        }
+       
 
-        // Make this object disappear
-        GameObject.Destroy(gameObject);
+        playerController.Damage();
+     
+        GetComponent<Collider2D>().enabled = false;
+
+      
+        GetComponent<SpriteRenderer>().enabled = false;
     }
 }
