@@ -78,7 +78,7 @@ public class levelSelectionGridController : MonoBehaviour
         // TODO: Create a popup where user can select difficulty.
         VisualElement popupFromTemplate = popupTemplate.Instantiate().Q<VisualElement>("Popup");
         popupFromTemplate.Q<Label>("LevelName").text = level.label;
-        popupFromTemplate.Q<Label>("LevelDescription").text = level.description;
+        popupFromTemplate.Q<Label>("LevelDescription").text = level.getClearInfo() + level.description;
         popupFromTemplate.Q<Button>("Exit").RegisterCallback<ClickEvent>(ev => {
             root.Remove(popupFromTemplate);
         });

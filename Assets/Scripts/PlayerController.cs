@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using LevelSelection;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /*
@@ -62,6 +63,7 @@ public class PlayerController : MonoBehaviour
      */
     public void Success()
     {
+        ClearData.UpdateClearEntry(GameData.levelInfo.levelId, new ClearData.ClearEntry(GameData.levelInfo.difficulty, GameData.health));
         SceneManager.LoadScene("SuccessGameUI");
     }
 
